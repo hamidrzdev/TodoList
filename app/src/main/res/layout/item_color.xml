@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="4dp"
+    android:background="@drawable/blue_circle">
+
+    <FrameLayout
+        android:id="@+id/selectItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selected_item_color"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_round_done_24"
+            app:tint="@color/white"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+</FrameLayout>

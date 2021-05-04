@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minWidth="45dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:clipToPadding="false">
+
+    <TextView
+        android:id="@+id/itemDayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="دوشنبه"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="?textAppearanceHeadline6"
+        android:textColor="@color/white"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/itemDayNumber"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/itemDayName"
+        app:layout_constraintStart_toStartOf="@id/itemDayName"
+        app:layout_constraintEnd_toEndOf="@id/itemDayName"
+        tools:text="16"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAppearance="?textAppearanceHeadline4"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

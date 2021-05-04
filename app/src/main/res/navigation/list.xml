@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/list"
+    app:startDestination="@id/fragmentCategory">
+
+    <fragment
+        android:id="@+id/fragmentCategory"
+        android:name="com.hamiddev.todolist.feature.category.FragmentCategory"
+        android:label="FragmentCategory" />
+</navigation>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="2dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/categoryTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مدرسه"
+                android:layout_marginRight="4dp"
+                android:textAppearance="?textAppearanceBody1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="14dp"
+                android:text="this is a test for the title"
+                android:textAppearance="?textAppearanceHeadline6"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categoryTv" />
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="14dp"
+                android:text="19:00 - 21:00"
+                android:textAppearance="?textAppearanceBody1"
+                android:textColor="@color/darkGray"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleTv" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/isComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?dividerColor"
+                app:layout_constraintTop_toBottomOf="@id/timeTv"
+                android:layout_marginTop="8dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteTaskBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="@string/delete_task"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            android:textAppearance="?textAppearanceHeadline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="-4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

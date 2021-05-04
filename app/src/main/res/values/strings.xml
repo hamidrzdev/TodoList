@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">چک لیست</string>
+    <string name="home">خانه</string>
+    <string name="list">تسک ها</string>
+    <string name="add_new_task">اضافه کردن تسک</string>
+    <string name="task_title">عنوان</string>
+    <string name="task_title_hint">عنوان تسک خود را وارد کنید</string>
+    <string name="task_date">تاریخ</string>
+    <string name="task_date_hint">تاریخ تسک را انتخاب کنید</string>
+    <string name="start_hour">ساعت شروع</string>
+    <string name="end_hour">ساعت پایان</string>
+    <string name="description">توضیحات</string>
+    <string name="category">دسته بندی</string>
+    <string name="add_category">اضافه کردن دسته بندی</string>
+    <string name="new_category">دسته بندی جدید</string>
+    <string name="add_category_btn">اضافه کن</string>
+    <string name="no_category">هیچ دسته بندی وجود ندارد!</string>
+    <string name="delete_task">حذف تسک</string>
+</resources>

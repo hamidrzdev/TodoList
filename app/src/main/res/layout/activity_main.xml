@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"/>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/appbarBottom"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/round"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        app:fabAlignmentMode="end">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="190dp"
+            android:background="@android:color/transparent"
+            android:paddingEnd="20dp"
+            app:elevation="0dp"
+            app:itemIconSize="28dp"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/main_item"
+            tools:ignore="RtlSymmetry" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbarBottom"
+        app:layout_anchorGravity="top|right"
+        app:srcCompat="@drawable/ic_round_add_circle_24" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
