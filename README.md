@@ -1,4 +1,4 @@
-# TodoList2
+# TodoList
 A simple Todo-list app
 
 RxJava , LiveData , Room
